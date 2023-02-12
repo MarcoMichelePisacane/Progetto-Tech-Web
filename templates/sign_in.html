@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registrazione</title>
+    <link rel="stylesheet" href="/static/css/sign_in.css">
+</head>
+    <body>
+        <div class="card-wrapper">
+            <div class="card">
+                <h1 class="center">Crea il tuo account</h1>
+                <form name="signup_form" action="/sign_in/" method="post">
+
+                    <label for="utente">Nome Utente</label>
+                    <input type="text" name="utente" class="field" required>
+
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" class="field" required>
+
+                    <label for="cognome">Cognome</label>
+                    <input type="text" name="cognome" class="field" required>
+                    
+                    <label for="età">Età</label>
+                    <input type="text" name="età" class="field">
+
+                    <label for="email">Email</label>
+                    <input type="email" name="email" class="field" required>
+
+                    <label for="password">Password</label>
+                    <input type="password" name="password" class="field" required>
+
+
+                    <label for="sesso">Sesso</label>
+                    <input type="radio" name="sesso" value="maschio"> maschio
+                    <input type="radio" name="sesso" value="femmina"> femmina
+                    <input type="radio" name="sesso" value="altro"> altro
+                    
+                    <p class="error error--hidden"></p>
+
+                    <input type="submit" value="Registrazione" class="btn">
+
+                </form>
+            </div>
+        </div>
+        
+        <script src="/static/js/jquery.js"></script>
+        
+        <script src="/static/js/script.js"></script>
+    </body>
+</html>
