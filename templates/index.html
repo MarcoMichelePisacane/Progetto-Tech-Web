@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <!-- This tag specifies the character encoding for the document, which is UTF-8 in this case -->
+    <meta charset="UTF-8">
+     <!-- This tag sets the viewport width to the device width and the initial zoom level to 1.0 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <!-- This tag is used to specify the version of Internet Explorer that the document is optimized for. "ie=edge" indicates that the latest version of Internet Explorer should be used -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- We indicate the css file that will be used -->
+    <link rel="stylesheet" href="/static/css/style.css">
+
+    <title>Vengeance's Journey</title>
+</head>
+<body>
+
+<!-- We show the game commands -->
+<div id="instructions">
+    (W,A,S,D,Q,E = Move, SPACEBAR = Shot)
+</div>
+
+<!-- we show elements of the game -->
+<div id="timer"></div>
+<div id="circle"></div>
+<div id="score"></div>
+
+<!-- we generate the buttons for the game -->
+<button id="button1" >/\</button>
+<button id="button2" >\/</button>
+<button id="button3" ><</button>
+<button id="button4" >></button>
+<button id="button5" >o</button>
+<button id="button6" >DL</button>
+<button id="button7" >DR</button>
+
+
+
+<!-- we import the necessary libraries using keywords that replace the directory -->
+<script type="importmap">
+    {
+      "imports": {
+        "three": "/static/js/threejs/build/three.module.js",
+        "cannon-es": "/static/js/cannonjs/cannon-es.js"
+      }
+    }
+</script>
+
+<!-- We indicate the js file that will be used, module specifies the type of file -->
+<script src="/static/js/main.js" type="module"></script>
+
+</body>
+</html>

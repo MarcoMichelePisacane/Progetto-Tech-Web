@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- This tag specifies the character encoding for the document, which is UTF-8 in this case -->
+    <meta charset="UTF-8">
+    <!-- This tag sets the viewport width to the device width and the initial zoom level to 1.0 -->
+    <meta name="viewport" content="width=device-width, initial-scale1.0">
+     <!-- This tag is used to specify the version of Internet Explorer that the document is optimized for. "ie=edge" indicates that the latest version of Internet Explorer should be used -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Vengeance's Journey</title>
+
+    <!-- We indicate the css file that will be used -->
+    <link rel="stylesheet" href="/static/css/HomeStyle.css">
+
+</head>
+    <body>
+    <!-- we display the user's name when registering or logging in-->
+    <p class="UserName"> Utente : {{session['user']}}</p>
+    <div class="game_name">
+        VENGEANCE'S JOURNEY
+    </div>
+
+    <!-- buttons that take you to the pages of the respective social networks -->
+    <button class="button1" onclick="location.href='https://www.instagram.com/vengeances_journey_/'"></button>
+    <button class="button2" onclick="location.href='https://www.tiktok.com/@vengeances_journey'"></button>
+    <button class="button3" onclick="location.href='https://twitter.com/VengeancesJ'"></button>
+
+    <!-- buttons that take you to other html pages -->
+    <button class="play" onclick="location.href='{{ url_for('game')}}'"></button>
+    <button class="SignIn" onclick="location.href='{{ url_for('sign_in')}}'">Sign In</button>
+    <button class="LogIn" onclick="location.href='{{ url_for('log_in')}}'">Log In</button>
+
+    </body>
+</html>
